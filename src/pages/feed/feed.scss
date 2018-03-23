@@ -1,10 +1,23 @@
 page-feed {
 
     h2.feed_title {
-        color: red;
+        color: black;
         font-weight: bold;
     }
     p.feed_date {
-        color: green;
+        color: ghostwhite;
+
     }
+    .feed_content {
+        background-color: lavender;
+    }
+    .card_class{
+
+        background-color: indigo;
+        
+    }
+    .cardback_class{
+        background-color: black;
+    }
+    
 }

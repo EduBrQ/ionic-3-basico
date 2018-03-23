@@ -10,6 +10,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FeedPage } from '../pages/feed/feed';
 import { IntroPage } from '../pages/intro/intro';
+import { HttpModule }  from "@angular/http";
+import { MovieProvider } from '../providers/movie/movie';
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { IntroPage } from '../pages/intro/intro';
   ],
   imports: [
     BrowserModule,
+    HttpModule,  //ionic generate provider - tem que rodar esse comando depois p criar um provedor
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -38,7 +41,8 @@ import { IntroPage } from '../pages/intro/intro';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MovieProvider
   ]
 })
 export class AppModule {}
