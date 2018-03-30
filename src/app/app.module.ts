@@ -12,6 +12,7 @@ import { FeedPage } from '../pages/feed/feed';
 import { IntroPage } from '../pages/intro/intro';
 import { HttpModule }  from "@angular/http";
 import { MovieProvider } from '../providers/movie/movie';
+import { HideHeaderDirective } from '../directives/hide-header/hide-header';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { MovieProvider } from '../providers/movie/movie';
     HomePage,
     FeedPage,
     IntroPage,
-    TabsPage
+    TabsPage,
+    HideHeaderDirective
 
     
   ],

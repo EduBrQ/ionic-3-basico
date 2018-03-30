@@ -4,15 +4,19 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header #head>
 
   <ion-navbar>
     <ion-title>Releases</ion-title>
   </ion-navbar>
 
 </ion-header>
+<ion-content>
+<h3> </h3>
+<h3> </h3>
 
-<ion-content padding>
+</ion-content>
+<ion-content padding hide-header [header]="head">
 
   <ion-card *ngFor="let filme of lista_filmes">
 
